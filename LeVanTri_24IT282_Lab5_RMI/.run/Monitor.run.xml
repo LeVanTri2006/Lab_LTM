@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Monitor" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.vku.rmi.monitor.ClusterMonitorGUI" />
+    <module name="lab5-rmi-sync" />
+    <option name="PROGRAM_PARAMETERS" value="127.0.0.1 1099 127.0.0.1 1100" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dsun.rmi.transport.tcp.handshakeTimeout=3500 -Dsun.rmi.transport.tcp.responseTimeout=5000" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

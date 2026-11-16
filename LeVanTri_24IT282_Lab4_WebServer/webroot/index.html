@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VKU Lab 4 · HTTP Web Server</title>
+    <style>
+        body { background-color: #edf1f6; color: #15253a; font-family: 'Segoe UI', sans-serif; margin: 16px; }
+        .hero { background-color: #14283f; color: #ffffff; padding: 18px; }
+        .course { color: #a8efdc; font-weight: bold; }
+        .card { background-color: #ffffff; margin-top: 12px; padding: 14px; }
+        a { color: #086c60; font-weight: bold; }
+        .hero-link { color: #a8efdc; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="shell">
+        <div class="hero">
+            <p class="course">VKU / LAB 4 / LẬP TRÌNH MẠNG</p>
+            <h1>HTTP Web Server</h1>
+            <p>Tài liệu, âm thanh, video và API trên một máy chủ HTTP/1.1.</p>
+            <a class="hero-link" href="/api/stats">Xem thống kê máy chủ</a>
+        </div>
+
+        <h2>Dịch vụ máy chủ</h2>
+        <div class="services">
+            <div class="card">
+                <p class="format">application/pdf</p>
+                <h3>Tài liệu học phần</h3>
+                <p>Tài liệu mẫu cho bài thực hành Lập trình mạng.</p>
+                <a href="sample.pdf">Mở tài liệu PDF</a>
+            </div>
+            <div class="card">
+                <p class="format">audio/mpeg</p>
+                <h3>Âm thanh</h3>
+                <p>Kiểm tra phản hồi HTTP cho tệp MP3.</p>
+                <audio controls preload="metadata" src="sample.mp3"></audio>
+                <a href="sample.mp3" download>Tải tệp MP3</a>
+            </div>
+            <div class="card">
+                <p class="format">video/mp4</p>
+                <h3>Video</h3>
+                <p>Kiểm tra Byte-Range và mã phản hồi 206 Partial Content.</p>
+                <video controls preload="metadata" src="sample.mp4"></video>
+                <a href="sample.mp4" download>Tải tệp MP4</a>
+            </div>
+            <div class="card">
+                <p class="format">application/json</p>
+                <h3>API máy chủ</h3>
+                <p>Xem thống kê yêu cầu hoặc dữ liệu đã gửi qua POST.</p>
+                <a href="/api/stats">Thống kê</a> · <a href="/api/posts">Dữ liệu POST</a>
+            </div>
+        </div>
+
+        <p class="footer">Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn</p>
+    </div>
+</body>
+</html>
